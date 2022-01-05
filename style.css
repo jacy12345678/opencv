@@ -1,0 +1,50 @@
+.container
+{
+    margin: 50px;
+    font-size: 20px;
+    display: flex  ;
+}
+.select input
+{
+    margin-top: 20px;
+    font-size: 30px;
+    background-color:grey ;
+    color: aliceblue;
+    border-radius:10px ;
+}
+
+.select input:hover,
+.select input.hovered
+{
+   background-color: white;
+   color: black;
+   font-weight: 700;
+}
+
+.srcblock
+{
+    display: block;
+}
+.dstblock
+{
+    border: 3px solid black;
+    padding: 2px;
+    
+}
+#status
+{
+    margin-left:20px ;
+    font-size: 20px;
+}
+#resizepercent
+{
+    font-size: 20px;
+}
+#resize
+{
+    position: absolute;
+}
+.caption
+{
+    margin-top: 100px;
+}

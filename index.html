@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>OpenCV.js</title>
+<link rel="stylesheet" type ="text/css" href="style.css">
+</head>
+
+<body>
+<img src="商標.png" width="391" height="94">
+<img src="群青.png" width="391" height="94" style="display: none;" id="yoa">
+<p id="status">請稍後</p>
+<div class="container">
+  <div class="inputoutput">
+    <div class="srcblock" style="display: flex;">
+      <span id="resize">
+        <input type="range" min="0" max="200" id="resizetrackbar" style="width: 200px;">
+        <p id="resizepercent">調整大小</p>
+      </span>
+      <div class="caption"><input type="file" id="fileInput" name="file" ></div>
+      <div class="srcdiv" style="width: 1300px;height: 800px; border: 2px solid grey;">
+        <img id="imageSrc" alt="No Image" />
+      </div>
+    </div>
+    <div style="display: block;" class="select">
+      <input type="button" onclick="gary()" value="黑白">
+      <input type="button" onclick="rotate()" value="旋轉">
+      <input type="button" onclick="HShear()" value="水平剪型">
+      <input type="button" onclick="VShear()" value="垂直剪型">
+      <input type="button" onclick="rex()" value="左右鏡射">
+      <input type="button" onclick="rey()" value="上下鏡射">
+    </div>
+    <div class="dstblock">
+      <div>
+        <canvas id="imageSrc2"></canvas>
+      </div>
+      <span style="display: flex;">
+        <input type="range" min="0" max="100" id="trackbar" style="width: 300px;">
+        <p id="percent"></p>
+      </span>
+      <input type="button" id="save" value="儲存圖片">
+    </div>
+    <input type="button" onclick="Re()" value="復原">
+  </div>
+</div>
+
+</body>
+</html>
+
+  <script src="opencv.js" async onload="opencvLoad();" type="text/javascript"></script>
+  <script src="js.js"></script>
+  
